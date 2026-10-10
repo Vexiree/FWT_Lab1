@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeSalads</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1>ThreeSalads</h1>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+  </header>
+
+  <main class="main-form">
+    <form class="form" action="https://httpbin.org/post" method="POST">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Почта:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="where">Откуда узнали?:</label><br>
+        <input type="radio" id="friend" name="where" value="friend" required>
+
+        <label for="where">Другой пользователь</label><br>
+        <input type="radio" id="advertisement" name="where" value="advertisement" required>
+
+        <label for="where">Реклама</label><br>
+        <input type="radio" id="search" name="where" value="search" required>
+
+        <label for="where">Поиск</label>
+        <br><br>
+
+        <label for="type">Тип обращения:</label>
+        <select id="type" name="type" required>
+            <option value="complaint">Жалоба</option>
+            <option value="suggestion">Предложение</option>
+        </select><br><br>
+
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="file">Вложения:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="personal">Согласие на обработку персональных данных:</label>
+        <input type="checkbox" id="personal" name="personal" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="contacts">
+      <h2>Contacts</h2>
+      <p>Email: ivanovmatvej4548@gmail.com</p>
+      <p>Phone: +7(995)131-05-80</p>
+    </div>
+
+    <div class="footer-content">
+      <p>2026. My Website about salads. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>

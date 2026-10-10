@@ -93,3 +93,62 @@ body {
   color: rgb(255, 255, 255);
   padding: 50px;
 }
+
+.form {
+  background-color: #4ca257;
+  background-size: cover;
+  background-position: center;
+  color: #ffffffc9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  gap: 5px;
+}
+
+
+.form input[type="text"],
+.form input[type="email"],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+  background-color: #176121;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.main-form {
+  display: flex;
+  background-color: #c9ffcd;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.main-auth{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/SaladBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  background-color: #c9ffcd;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 100px;
+  height: 100vh;
+}
